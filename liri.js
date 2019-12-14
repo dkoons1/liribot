@@ -24,9 +24,16 @@ Date of Event: ${moment(data[i].datetime).format("MM/DD/YYYY")}`)
 
 function spotifyIt(input){
     spotify
-    .search({ type: 'track', query: input, limit: 1 })
+    .search({ type: 'track', query: input, limit: 2 })
     .then(function(response) {
-    console.log(response);
+    var data = response.tracks.items[0];
+    //console.log(response.tracks.items[0])
+    console.log(`
+Artist(s): ${data.artists[0].name}
+Song Name: ${data.name}
+Preview Link: ${data.album.href}
+Album Name: ${data.album.name}
+    `);
     })
     .catch(function(err) {
     console.log(err);
