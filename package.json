@@ -1,0 +1,29 @@
+{
+  "name": "liribot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkoons1/liribot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkoons1/liribot/issues"
+  },
+  "homepage": "https://github.com/dkoons1/liribot#readme",
+  "dependencies": {
+    "@types/spotify-web-api-node": "^4.0.1",
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "env": "0.0.2",
+    "momen": "0.0.1-security",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.1.1"
+  }
+}
